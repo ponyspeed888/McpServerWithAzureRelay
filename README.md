@@ -4,3 +4,9 @@
   
   To run this, you need to creat a Azure Relay namespace and a hybrid connection, and get the primary connection string.  Tested with Visaul Studio and Claude
 
+  What is changed is that Azure Replay response to RelayResponseBodyFeature with a "not implemented" exception, if you just wire up Azure relay without doing anything, it will failed.
+  
+  I had to implement a custom RelayResponseBodyFeature to handle the response correctly. 
+  
+  
+ 
